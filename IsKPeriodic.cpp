@@ -9,4 +9,5 @@ void IsKPeriodic(int k, string txt,string pat)
     };
     if (k > 1 && txt[0] == txt[k - 1] && txt[k - 1] != txt[k]) { cout << "K is incorrect"; cout << endl; }
     else { KMPSearch(pat, txt, k); };
+    delete[] array;
 }
